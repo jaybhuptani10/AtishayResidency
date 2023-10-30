@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    width: 100%;
+}
+/* Navigation */
+#nav{
+    position: relative;
+    display: flex;
+    
+    justify-content: space-between;
+    padding: 3vw 7vw;
+}
+
+#nav a{
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #000;
+}
+.nav-l{
+    display: flex;
+    gap: 2vw;
+}
+#nav #centera{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* hero-div */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 7vw;
+    padding: 0vw 7vw;
+    
+}
+.sustain{
+    width: 13vw;
+    
+
+}
+.sustain p{
+    text-transform: capitalize;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 1vw;
+    margin: 10px 0;
+    opacity: 0.5;
+}
+
+.sustain .suimagewrapper{
+    width: 100%;
+    height: 18vw;
+   
+}
+.suimagewrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.atishay{
+    position: relative;
+    width: 30vw;
+    min-height: 39vw;
+  
+   
+
+}
+.imgntext{
+    width: fit-content;
+    height: fit-content;
+
+}
+.atishay .heading{
+    position: absolute;
+    top: -16%;
+    left: -20%;
+}
+.atishay h1{
+    color: rgb(182, 29, 29);
+    line-height: 0.7;
+    letter-spacing: -.4vw;
+    font-size: 6vw;
+    font-weight: 100;
+}
+.atishay img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.atishay p{
+    font-size: 1.2vw;
+    
+    line-height: 1;
+    letter-spacing: -.07vw;
+    width: 40%;
+   
+}
+.visit{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.visit h3{
+    color: #5e5e5e;
+}
+#circlev{
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #5e5e5e;
+    border-radius: 50%;
+}
+#circlev i{
+    color: #5e5e5e;
+}
+
+.motive{
+    margin-top: 10vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 10vw;
+}
+.motive p{
+    line-height: 1.7;
+    letter-spacing: -.1vw;
+    width: 80%;
+    text-align: right;
+    font-size: 2vw;
+   
+   
+   
+}
+
+.motive span{
+    display: inline-block;
+    width: 8vw;
+    height: 3vw;
+    margin: 0 10px;
+    background-color: rebeccapurple;
+    border-radius: 100px;
+    margin-bottom: -1vw;
+}
+
+#spanfirst{
+   background-image: url(https://images.unsplash.com/photo-1619375427371-4de1769526af?auto=format&fit=crop&q=80&w=1528&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   background-position: center;
+   background-size: cover;
+}
+#spansecond{
+    background-image: url(https://images.unsplash.com/photo-1567450213298-e7a1824f6636?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+#spanthird{
+    background-image: url(https://imgs.search.brave.com/p5MpdktIAAkvWSiVmDPt9e6JY86BTmNT3PPwcaEXiMA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/c3RhdGljbWIuY29t/L21iaW1hZ2VzL3By/b2plY3QvUGhvdG9f/aDMwMF93NDUwLzIw/MjAvMDkvMTYvUHJv/amVjdC1QaG90by0z/LVRhbmlzaGstRW5j/bGF2ZS1BaG1lZGFi/YWQtNTE4OTA1Ml82/MDBfODAwXzMwMF80/NTAuanBn);
+    background-position: center;
+   background-size: cover;
+}
+
+@media(max-width:600px){
+    #nav{
+       flex-direction: column;
+       gap: 10vw;
+       align-items: center;
+
+    }
+    .nav-l{
+        gap: 5vw;
+    }
+    .hero{
+        margin-top: 20vw;
+        flex-direction: column;
+        gap: 15vw;
+    }
+    .sustain{
+        width: 53vw;
+        
+    
+    }
+    .sustain p{
+        text-transform: capitalize;
+        line-height: 1;
+        font-weight: 500;
+        font-size: 5vw;
+        margin: 10px 0;
+        opacity: 0.5;
+    }
+    
+    .sustain .suimagewrapper{
+        padding: 3vw;
+        width: 100%;
+        height: 60vw;
+       
+    }
+    .suimagewrapper img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+    
+    .atishay{
+        position: relative;
+        width: 50vw;
+        height: 69vw;
+     
+    
+    }
+    .atishay .heading{
+        position: absolute;
+        top: -8%;
+        left: -20%;
+    }
+    .atishay h1{
+        color: rgb(182, 29, 29);
+        line-height: 0.7;
+        letter-spacing: -.4vw;
+        font-size: 6vw;
+        font-weight: 400;
+    }
+    .atishay img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .atishay p{
+        font-size: 2vw;
+
+    }
+    
+    .visit{
+        
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .visit h3{
+        font-size: 3.3vw;
+        color: #5e5e5e;
+    }
+    #circlev{
+        width: 4vw;
+        height: 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #5e5e5e;
+        border-radius: 50%;
+    }
+    #circlev i{
+        color: #5e5e5e;
+    }
+}
