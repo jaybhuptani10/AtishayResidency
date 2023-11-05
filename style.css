@@ -67,6 +67,7 @@ main{
    
 }
 .suimagewrapper img{
+    filter: drop-shadow(10px 8px 6px #111);
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -176,6 +177,183 @@ main{
    background-size: cover;
 }
 
+
+.picture{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8vw;
+    padding: 3vw;
+    padding-left: 14vw;
+    padding-right: 12vw;
+}
+
+.firstpic{
+    width: 17vw;
+}
+.firstpic .picimg{
+    width: 100%;
+    height: 24vw;
+  
+    margin-bottom: 1vw;
+}
+.picimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: drop-shadow(10px 8px 6px #111);
+}
+.firstpic h1, .secpic h1{
+    letter-spacing: -.1vw;
+    font-size: 2rem;
+    font-weight: 100;
+}
+.firstpic p, .secpic p{
+    opacity: 0.8;
+    margin-top: 10px;
+    letter-spacing: -0.8;
+    line-height: 1;
+    font-size: 18px;
+}
+.secpic{
+    text-align: right;
+    width: 25vw;
+}
+.secpic .picimg{
+    width: 100%;
+    height: 37vw;
+  
+    margin-bottom: 1vw;
+}
+.secpic p{
+    
+    text-align: right;
+}
+
+.full-screen{
+    position: relative;
+    width: 90;
+    height: 80vh;
+    margin-bottom: 20vw;
+}
+.back{
+    width: 100%;
+    height: 100vh;
+
+   
+}
+.back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
+}
+.workingarea{
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+    height: 100vh;
+    max-width: 1900px;
+}
+
+.herodiv{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    justify-content: space-between;
+    width: 100%;
+    
+    display: flex;
+   
+}
+.heroleft{
+    min-width: 50%;
+    
+   
+}
+.heroleft .elem{
+    position: relative;
+    height: 7vw;
+    overflow: hidden;
+ 
+}
+.heroleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    letter-spacing: -0.5vw;
+    font-family: "kajiro";
+    color: white;
+    font-size: 6vw;
+}
+.heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+.heroright{
+    min-width: 25%;
+   
+ 
+}
+.banner{
+  
+    width: 100%;
+    margin-top: 8vw;
+    display: flex;
+    align-items: center;
+}
+.bimg{
+    width: 65%;
+    height: 80vh;
+}
+.bimg img{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 75%;
+}
+.btext{
+    width: 35%;
+    padding: 0 3vw;
+}
+.btext h1{
+    font-size: 3.5vw;
+    letter-spacing: -.1vw;
+}
+.btext p{
+    margin-bottom: 20px;
+    width: 60%;
+    font-size: 1.5vw;
+}
+.future{
+    margin-top: 10vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+.future video{
+    /* position: absolute; */
+    width: 100%;
+    
+    /* height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(); */
+}
 @media(max-width:600px){
     #nav{
        flex-direction: column;
@@ -269,5 +447,149 @@ main{
     }
     #circlev i{
         color: #5e5e5e;
+    }
+    .picture{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8vw;
+        padding: 3vw;
+        padding-left: 10vw;
+        padding-right: 8vw;
+    }
+    
+    .firstpic{
+        width: 27vw;
+    }
+    .firstpic .picimg{
+        width: 100%;
+        height: 35vw;
+      
+        margin-bottom: 1vw;
+    }
+    .picimg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+    }
+    .firstpic h1, .secpic h1{
+        letter-spacing: -.1vw;
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+    .firstpic p, .secpic p{
+        opacity: 0.8;
+        margin-top: 10px;
+        font-size: 0.7rem;
+    }
+    .secpic{
+        text-align: right;
+        width: 35vw;
+    }
+    .secpic .picimg{
+        width: 100%;
+        height: 47vw;
+      
+        margin-bottom: 1vw;
+    }
+    .btext h1{
+        font-size: 1.4rem;
+        letter-spacing: -.1vw;
+    }
+    .btext p{
+        margin-bottom: 20px;
+        width: 60%;
+        font-size: 3.5vw;
+    }
+    .full-screen{
+        position: relative;
+        width: 100%;
+        height: 10%;
+        margin-bottom: 15vw;
+    }
+    .back{
+        width: 100%;
+        height: 100%;
+    
+       
+    }
+    .back img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .top{
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .workingarea{
+        margin: 0 auto;
+        position: relative;
+        width: 80%;
+        height: 100%;
+        max-width: 1900px;
+    }
+    
+    .herodiv{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0,-50%);
+        justify-content: space-between;
+        width: 100%;
+        
+        display: flex;
+       
+    }
+    .heroleft{
+        min-width: 50%;
+        
+       
+    }
+    .heroleft .elem{
+        position: relative;
+        height: 7vw;
+        overflow: hidden;
+     
+    }
+    .heroleft .elem h1{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        letter-spacing: -0.5vw;
+        font-family: "kajiro";
+        color: white;
+        font-size: 6vw;
+    }
+    .heroleft .elem h1:nth-child(1){
+        top: 0;
+    }
+    .heroright{
+        min-width: 25%;
+       
+     
+    }
+    .banner{
+      
+        width: 100%;
+        margin-top: 8vw;
+        display: flex;
+        align-items: center;
+    }
+    .bimg{
+        width: 65%;
+        height: 80vh;
+    }
+    .bimg img{
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 75%;
     }
 }
