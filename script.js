@@ -1,4 +1,6 @@
-Shery.imageEffect(".bimg", {
+var w = window.innerWidth;
+if(w>=660){
+  Shery.imageEffect(".bimg", {
     style: 4 /*OR 5 for different variant */,
     // debug: true,
     gooey:true
@@ -31,3 +33,6 @@ document.querySelector(".full-screen")
       duration: 1
     })
 })
+    
+}
+
