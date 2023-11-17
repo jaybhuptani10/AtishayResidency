@@ -27,6 +27,7 @@ main{
     text-decoration: none;
     color: #000;
 }
+
 .nav-l{
     display: flex;
     gap: 2vw;
@@ -401,7 +402,9 @@ main{
     transform: rotate3d(1,1,0,30deg);
     background-position: 80%;
 }
-
+.nearby-card a{
+    color: white;
+}
 
 .box-info h1{
     color: white;
